@@ -1,0 +1,98 @@
+body {
+    max-width: 700px;
+    min-height: 500px;
+    border: 4px double rgb(52, 11, 99);
+    border-radius: 9px;
+    box-shadow: 1px 1px 8px 0px;
+    margin: 30px auto;
+    padding: 20px;
+    
+}
+
+h2 {
+    text-align: center;
+    color: rgb(52, 11, 99);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.complete span {
+    text-decoration: line-through;
+}
+
+#ulTasks li span {
+margin-right: 20px;
+font-size: 22px;
+vertical-align: top;
+}
+
+#ulTasks li {
+margin-top: 10px;
+list-style-type: none;
+}
+
+#ulTasks .png_complete {
+    background: url(./picture_module5/complete.png) 50% 30% no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+#ulTasks .png_delete {
+    background: url(./picture_module5/delete.png) 50% 30% no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#all {
+    color: rgb(52, 11, 99);
+    font-weight: 700;
+}
+
+#complete {
+    color: #3bb54a;
+    font-weight: 700;
+}
+
+#unfinished {
+    color: #ff4141;
+    font-weight: 700;
+}
+
+#nameList li {
+    list-style-type: none;
+}
+
+.fa-solid.fa-user {
+    padding-right:10px;
+}
+
+@media(max-width: 650px){
+    body {
+        margin: 30px 20px;
+    }
+    .flex-container {
+    align-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+    .flex-left {
+    margin-top: 10px;
+    }
+}
+
+
+

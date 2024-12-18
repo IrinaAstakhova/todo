@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+<link rel="stylesheet" href="styles_m5.css">
+<title>Список задач</title>
+</head>
+<body>
+    <h2><i class="fa-solid fa-list-check"></i> Список задач</h2>
+    <div class="flex-container">
+        <div class="flex-left">
+        <input type="text" placeholder="Введите задачу" id="taskInput">
+        <button class="fa-solid fa-plus" onclick="addTask()">  Добавить задачу</button>
+        </div>
+        <div class="flex-right">
+        <button class="fa-solid fa-eye-low-vision" id="all" onclick="filterAll()"> Все</button>
+        <button class="fa-solid fa-eye" id="complete" onclick="filterComplete()"> Выполненные</button>
+        <button class="fa-solid fa-eye-slash" id="unfinished" onclick="filterUnfinished()"> Невыполненные</button>
+        </div>
+</div>
+<div>
+    <ul id="ulTasks"></ul>
+</div>
+<script src="script_m5_part1.js"></script>
+</body>
+</html>
